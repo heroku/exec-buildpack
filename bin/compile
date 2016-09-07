@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# fail fast
+set -eu
+
+# parse args
+BP_DIR="$(cd "$(dirname "$0")" && pwd)"
+BUILD_DIR=$1
+OPT_DIR=$BP_DIR/../opt/
+
+
+cd $BUILD_DIR
+
+mkdir -p .profile.d
+cp $OPT_DIR/tunnels.sh .profile.d/
+cp $OPT_DIR/jmx.sh .profile.d/
