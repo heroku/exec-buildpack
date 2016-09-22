@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -z "SSH_CLIENT" ] && [ -n "$TUNNELS_URL" ]; then
+if [ -z "$SSH_CLIENT" ] && [ -n "$TUNNELS_URL" ]; then
 
   jmx_port=${JMX_PORT:-"1098"}
   rmi_port=${RMI_PORT:-"1099"}
