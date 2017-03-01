@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo "Tunnels"
+echo "Heroku Exec"
 exit 0
