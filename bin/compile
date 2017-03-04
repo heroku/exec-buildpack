@@ -12,5 +12,5 @@ OPT_DIR=$BP_DIR/../opt/
 cd $BUILD_DIR
 
 mkdir -p .profile.d
-cp $OPT_DIR/tunnels.sh .profile.d/
+cp $OPT_DIR/heroku-exec.sh .profile.d/
 cp $OPT_DIR/jmx.sh .profile.d/
